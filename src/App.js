@@ -120,8 +120,9 @@ function App() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-const handleRadioChange = (e)=>{
+const handleRadioChange = async(e)=>{
   setURL(e.target.id)
+  await setTimeout(() => {}, 100);
   ref.current?.scrollIntoView({behavior: 'smooth'});
 
 }
@@ -214,7 +215,7 @@ const handleRadioChange = (e)=>{
                 key={page}
                 id={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' ,border: "1px solid",borderColor:"black",fontSize:"25px"}}
+                sx={{ my: 2, color: 'white', display: 'block' ,border: "1px solid",borderColor:"'white'",fontSize:"25px",marginLeft:"10px"}}
               >
                 {page}
               </Button>
@@ -231,7 +232,7 @@ const handleRadioChange = (e)=>{
     <Box >
       
       <RadioGroup
-        onChange={handleRadioChange}
+        onClick={handleRadioChange}
         size="lg"
         sx={{ gap: 1.5,display:"flex","flexDirection":"row-reverse ",flexWrap:"wrap" }}
       >
@@ -275,8 +276,9 @@ const handleRadioChange = (e)=>{
         )):""}
       </RadioGroup>
     </Box>
+    <br/>
     <div>
-      <br/>
+      
       {URL.length > 1?
       <iframe
       ref={ref}
@@ -289,6 +291,7 @@ const handleRadioChange = (e)=>{
 
     </iframe>:""}
     </div>
+
     <button
         onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
