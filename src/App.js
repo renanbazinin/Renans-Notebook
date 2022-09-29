@@ -184,7 +184,7 @@ const handleRadioChange = (e)=>{
             >
               {pages.map((page) => (
                 <MenuItem key={page}  id={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" id={page}>{page}</Typography>
+                  <Typography dir='rtl' textAlign="center" id={page}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -206,7 +206,7 @@ const handleRadioChange = (e)=>{
               textDecoration: 'none',
             }}
           >
-            <span onClick={handleOpenNavMenu}>←תפריט</span>
+            <span onClick={handleOpenNavMenu}>מחברת - רנן</span>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' ,},   }} dir='rtl'>
             {pages.map((page) => (
