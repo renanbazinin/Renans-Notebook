@@ -140,7 +140,7 @@ const handleRadioChange = async(e)=>{
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href="https://renanbazinin.github.io/Renans-Notebook/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
