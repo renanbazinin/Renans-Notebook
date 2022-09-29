@@ -228,7 +228,7 @@ const handleRadioChange = async(e)=>{
     </AppBar>
 
     
-    <h3 dir='rtl' style={{"textAlign":"center"}}>נושאי-{currentPage}</h3>
+    <h3 dir='rtl' style={{"textAlign":"center"}}>נושא-{currentPage}</h3>
     <Box >
       
       <RadioGroup
