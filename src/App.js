@@ -55,7 +55,7 @@ function App() {
   const subjectInCURL = ['https://drive.google.com/file/d/10dZjX1qrRoV9j9MxNvd4RjpEqDCGeFqu/',
   'https://drive.google.com/file/d/10msS5BBD4di_tY1OvlsP0RXRGCd_QJKN/',
   'https://drive.google.com/file/d/10gEDOTcMjnQ_-cta4VJWXz580_8ppwmq/'
-  ,'https://drive.google.com/file/d/10mE18Qa_SbnFndnToF_Agb9rWVggZ2Wb/','https://drive.google.com/file/d/10tzYxbXGLIm9C7qdSuHa1qiVxKjeZyyD/'];
+  ,'https://drive.google.com/file/d/10mE18Qa_SbnFndnToF_Agb9rWVggZ2Wb/','https://drive.google.com/file/d/10qx-_nsaCI2YbnxllFd-z-J48u6vKFFu/','https://drive.google.com/file/d/10tzYxbXGLIm9C7qdSuHa1qiVxKjeZyyD/'];
 
 
   const subjectInCalcus = ['Induction','InequalityOfArithmetic','SubDense','Neighborhood','LimitOfSeq','LimitOfSeqArithmetic','InfntyLimitOfSeq','InfntyLimitArithmetic'
