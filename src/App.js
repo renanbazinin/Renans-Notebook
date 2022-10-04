@@ -64,7 +64,7 @@ function App() {
   const subjectInCalcusHebrew = ['אינדוקציה','אי שיווין הממוצעים ','צפיפות תת-קבוצה ','סביבה וכמעט לכל n','גבול של סדרה ','אריתמטיקה של גבול סופי','גבול במובן הרחב','אריתמטיקה של גבול במובן הרחב'
   ,'סדרי גודל','מבחן המנה לגבולות ','סדרות חסומות ומונוטוניות','הלמה של קנטר','תת-סדרות','בולצאנו ויירשטראס','גבול עליון ותחתון','קריטריון קושי','פונקציות'];
 
-  const subjectInCalcusURL = ['https://drive.google.com/file/d/1-kk7vGWF6sNMawKnhDGZCxyKjmJFO6eq/',//אינדוקציה
+  const subjectInCalcusURL =  ['https://drive.google.com/file/d/1-kk7vGWF6sNMawKnhDGZCxyKjmJFO6eq/',//אינדוקציה
   'https://drive.google.com/file/d/1-u4D3Nx0L-MqTBGop7XujHuFr4Fp22Jn/',
   'https://drive.google.com/file/d/1-pCOKqu03Ye4nzCHCg8xCRDCuUpD8EOE/',//צפיפות
   'https://drive.google.com/file/d/100_iqA59zMtgI7ymbmxRB4EUKhb5y4UG/',
