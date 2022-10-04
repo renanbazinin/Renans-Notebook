@@ -90,6 +90,11 @@ function App() {
   const [fontWeight, setFontWeight] = useState('normal');
   const [anchorEl, setAnchorEl] = useState(null);
   const [currentPage, setCurrentPage] = useState('home');
+
+  useEffect(() => {
+    document.title = 'Renans NoteBook';
+  });
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
