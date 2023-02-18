@@ -52,14 +52,13 @@ function App() {
   const subjectInCHebrew = ['פתח דבר ויצוג בסיסיים שונים','לא אעשה הסבר על יסודות התכנות','מגבלת הטיפוס int וייצוג מספר שלילי','כתובות ומצביעים'
   ,'הקצאה דינמית','מחרוזות','חשיבה אלגוריתמית-תרגול מיונים'];
   
-  const subjectInCURL = ['https://drive.google.com/file/d/10dZjX1qrRoV9j9MxNvd4RjpEqDCGeFqu/',
-  'https://drive.google.com/file/d/10msS5BBD4di_tY1OvlsP0RXRGCd_QJKN/',
-  'https://drive.google.com/file/d/10gEDOTcMjnQ_-cta4VJWXz580_8ppwmq/'
-  ,'https://drive.google.com/file/d/10mE18Qa_SbnFndnToF_Agb9rWVggZ2Wb/',
-  'https://drive.google.com/file/d/10qx-_nsaCI2YbnxllFd-z-J48u6vKFFu/',
-  'https://drive.google.com/file/d/10tzYxbXGLIm9C7qdSuHa1qiVxKjeZyyD/',
-'https://drive.google.com/file/d/10w2bxgr-Ciun9zsM4F_x1wTIQFMT3UMn/'];
-
+  const subjectInCURL = ['https://drive.google.com/file/d/125ERc8lqKlG4pV-5L_pQ_YQ5JtY6wnLD/',
+  'https://drive.google.com/file/d/123-wHjYFEBdsv1lgtQFl2DU3Z0ojaciW/',
+  'https://drive.google.com/file/d/123DbadsMB6i4MmDap4BdUfjAzmS8jRqL/'
+  ,'https://drive.google.com/file/d/12AsCWooKu8rHNqDfytCc4u0gTHf87Ti0/',
+  'https://drive.google.com/file/d/12COthz3EFkUpFOiUO6KZsgGTbAEruQ8K/',
+  'https://drive.google.com/file/d/1250jF2j-_XPbv4XIWWujL1715gY2Lu4l/',
+'https://drive.google.com/file/d/1244jeR7omNh2gd2BQiL5iKlF7XtAQSDv/'];
 
   const subjectInCalcus = ['Induction','InequalityOfArithmetic','SubDense','Neighborhood','LimitOfSeq','LimitOfSeqArithmetic','InfntyLimitOfSeq','InfntyLimitArithmetic'
   ,'LimitingBehavior','ConvergenceTests','BlockedAndMono','LemaOfCantor','SubSeries','BolzanoWeierstrass','UpperLowerBounds','CauchySequence','Functions'];
@@ -116,17 +115,23 @@ function App() {
       setURL("https://drive.google.com/file/d/1-tSwUpC4sAiYf7bVlRP8ecuPE5UI9tHC/")
     }
 
+    //Calcus
     if(e.target.id===pages[1]){
       setChoosenSub(subjectInCalcus);
       setChoosenSubHeb(subjectInCalcusHebrew);
       setChoosenSubURL(subjectInCalcusURL)
     }
+    //CS in C
     if(e.target.id===pages[2]){
       setChoosenSub(subjectInCHebrew);
       setChoosenSubHeb(subjectInCHebrew);
       setChoosenSubURL(subjectInCURL)
     }
     setAnchorElNav(null);
+
+
+
+    
   };
 
   const handleCloseUserMenu = () => {
