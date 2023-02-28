@@ -17,6 +17,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 
+import myData from './data.json';
 
 import FormLabel from '@mui/joy/FormLabel';
 import Radio from '@mui/joy/Radio';
@@ -31,7 +32,7 @@ function App() {
   const ref = useRef(null);
 
   useEffect(() => {
-  
+
     document.addEventListener('scroll', (e)=> {
       console.log(document.documentElement.scrollTop)
       if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150)
@@ -60,13 +61,14 @@ function App() {
   'https://drive.google.com/file/d/1250jF2j-_XPbv4XIWWujL1715gY2Lu4l/',
 'https://drive.google.com/file/d/1244jeR7omNh2gd2BQiL5iKlF7XtAQSDv/'];
 
-  const subjectInCalcus = ['Induction','InequalityOfArithmetic','SubDense','Neighborhood','LimitOfSeq','LimitOfSeqArithmetic','InfntyLimitOfSeq','InfntyLimitArithmetic'
-  ,'LimitingBehavior','ConvergenceTests','BlockedAndMono','LemaOfCantor','SubSeries','BolzanoWeierstrass','UpperLowerBounds','CauchySequence','Functions'];
+  const subjectInCalcus = myData.subjectInCalcus//['Induction','InequalityOfArithmetic','SubDense','Neighborhood','LimitOfSeq','LimitOfSeqArithmetic','InfntyLimitOfSeq','InfntyLimitArithmetic','LimitingBehavior','ConvergenceTests','BlockedAndMono','LemaOfCantor','SubSeries','BolzanoWeierstrass','UpperLowerBounds','CauchySequence','Functions'];
 
-  const subjectInCalcusHebrew = ['אינדוקציה','אי שיווין הממוצעים ','צפיפות תת-קבוצה ','סביבה וכמעט לכל n','גבול של סדרה ','אריתמטיקה של גבול סופי','גבול במובן הרחב','אריתמטיקה של גבול במובן הרחב'
-  ,'סדרי גודל','מבחן המנה לגבולות ','סדרות חסומות ומונוטוניות','הלמה של קנטר','תת-סדרות','בולצאנו ויירשטראס','גבול עליון ותחתון','קריטריון קושי','פונקציות'];
+  const subjectInCalcusHebrew = myData.subjectInCalcusHebrew
+  //['אינדוקציה','אי שיווין הממוצעים ','צפיפות תת-קבוצה ','סביבה וכמעט לכל n','גבול של סדרה ','אריתמטיקה של גבול סופי','גבול במובן הרחב','אריתמטיקה של גבול במובן הרחב' ,'סדרי גודל','מבחן המנה לגבולות ','סדרות חסומות ומונוטוניות','הלמה של קנטר','תת-סדרות','בולצאנו ויירשטראס','גבול עליון ותחתון','קריטריון קושי','פונקציות'];
 
-  const subjectInCalcusURL =  ['https://drive.google.com/file/d/1-kk7vGWF6sNMawKnhDGZCxyKjmJFO6eq/',//אינדוקציה
+  const subjectInCalcusURL = myData.subjectInCalcusURL
+  /*
+  ['https://drive.google.com/file/d/1-kk7vGWF6sNMawKnhDGZCxyKjmJFO6eq/',//אינדוקציה
   'https://drive.google.com/file/d/1-u4D3Nx0L-MqTBGop7XujHuFr4Fp22Jn/',
   'https://drive.google.com/file/d/1-pCOKqu03Ye4nzCHCg8xCRDCuUpD8EOE/',//צפיפות
   'https://drive.google.com/file/d/100_iqA59zMtgI7ymbmxRB4EUKhb5y4UG/',
@@ -80,6 +82,7 @@ function App() {
   'https://drive.google.com/file/d/10VghZ6zQCvuh11UACknHcc1xzLxtF01b/','https://drive.google.com/file/d/10Vpjn0kqbFHpj72DvJ8262aacSKCmbPA/',
   'https://drive.google.com/file/d/10nVVLOygd-4fmNK9eG1J_mpdy3lkYE0f/'];
 
+*/
 
   const subjectInC = ['bases','skipi','theIntSigned','address'];
   
@@ -95,6 +98,7 @@ function App() {
 
   useEffect(() => {
     document.title = 'Renans NoteBook';
+
   });
 
   const handleOpenNavMenu = (event) => {
